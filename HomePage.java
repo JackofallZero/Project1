@@ -14,3 +14,17 @@ public class HomePage {
 			System.out.println("Select an option from the menu\n\t1. Display all files\n\t2. Business level operations\n\t3. Exit");
 			Scanner sc = new Scanner(System.in);
 			option = sc.nextInt();
+switch (option) {
+			//Option 1 to view files
+				case 1: {
+					
+					Collections.sort(arrayoffiles);
+					for (int i = 0; i < listoffiles.length; i++) 
+						{
+					  		if (listoffiles[i].isFile()) 
+					  		{
+					  			System.out.println("File " + listoffiles[i].getName());
+					  		} 
+						}
+						break;
+					}
